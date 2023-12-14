@@ -1,0 +1,42 @@
+<div class="container text-over-image">
+  <section class="row">
+
+    <form class="col-3 mb-5" onsubmit="app.NasaApodsController.searchApod()">
+      <div >
+        <div class=" input-group">
+          <input type="date" name="searchDate" id="search-apod-date" class="form-control"/>
+          <button class="btn btn-outline-light"><i class="mdi mdi-magnify"></i></button>
+        </div>
+      </div>
+    </form>
+    <!-- SECTION offcanvas open button -->
+    <div class="col-3">
+      <button class="btn btn-outline-light" title="open saved apods menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#apod-offcanvas" aria-controls="apod-offcanvas"><i class="mdi mdi-list-box"></i></button>
+    </div>
+  </section>
+    <section id="active-apod" class="row">
+    APOD OF THE DAY
+  </section>
+  <!-- SECTION offcanvas stuff -->
+  <section>
+    
+
+<div class="offcanvas offcanvas-end bg-glass" tabindex="-1" id="apod-offcanvas" aria-labelledby="apod-offcanvas-label">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="apod-offcanvas-label">My Apods</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <section class="container-fluid" id="my-apods-list">
+     <!-- STUB my apod template -->
+     <!-- <div class="row">
+      <div class="col-4"><img class="img-fluid" src="https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="apod thumbnail"></div>
+      <div class="col-6">2023-08-22</div>
+      <button class="btn btn-outline-dark col-2"><i class="mdi mdi-open-in-new"></i></button>
+     </div> -->
+     <!--  -->
+    </section>
+  </div>
+</div>
+  </section>
+</div>

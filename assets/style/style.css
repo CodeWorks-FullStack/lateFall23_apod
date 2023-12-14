@@ -1,1 +1,43 @@
 /* BASIC STYLES HERE */
+body{
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  transition: background-image .5s 1s ease;
+}
+
+.text-over-image{
+  text-shadow: 0px 0px 7px black;
+  font-weight: bolder;
+}
+.text-over-image p {
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+}
+
+.hover-parent .hover-child{
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+
+.hover-parent:hover .hover-child{
+  opacity: 1;
+  transition: opacity 5s linear;
+}
+
+.list-apod{
+  height: 8vh;
+}
+
+.list-apod img{
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.bg-glass{
+  background-color: transparent;
+  outline: 1px solid rgba(122, 122, 122, 0.5);
+  backdrop-filter: blur(50px);
+}
